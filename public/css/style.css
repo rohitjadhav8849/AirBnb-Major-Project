@@ -1,0 +1,174 @@
+body{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    flex:1;
+}
+
+/* navbar */
+.navbar{
+    height: 5rem;
+    position: sticky !important;
+    top: 0%;
+}
+
+.fa-house{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+color:black !important;
+font-size: 1.2rem !important;
+margin-left: 1vw !important;
+}
+
+/* footer */
+
+.f-head-terms a{
+    text-decoration: none;
+    color: black;
+    margin-left: .5vw;
+}
+.f-head-terms a:hover{
+    text-decoration:underline;
+}
+.f-head{
+    height:6vw;
+    width: 95%;
+    background-color: rgb(250, 250, 250);
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    gap: 50%;
+    border-top: .1vw rgb(180, 177, 177) solid;
+    font-size: 1vw;
+}
+.f-head1{
+   display: flex;
+   justify-content: space-evenly;
+   align-items:center;
+   gap: 3vw;
+}
+.fa-brands{
+    font-size:1.2vw;
+    margin-left: 1.1vw;
+}
+
+/* index */
+.row{
+    margin-left: 2.5vw !important ;
+    padding: 0% !important;
+}
+.card-img-top{
+    height: 16vw;
+    border-radius: 5% !important;
+}
+.listsCard{
+    margin: 0vw 1vw 0vw 1vw ;
+    border:none !important;
+    margin-bottom: 1vw;
+    transition:all .2s ease-in .2s ;
+}
+.card-body{
+    padding: 0 !important;
+    color: black !important;
+    font-size: 1.15vw;
+}
+.Adetail{
+    text-decoration: none !important;
+    color: black;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 1; 
+}
+.card:hover{
+    opacity: .8 !important;
+    transform: scale(.95) !important;
+}
+
+
+/*index image*/
+@media (max-width:800px) {
+    .card-img-top {
+        width: 100%;   
+        min-width: 15vw !important ; 
+        min-height: 18vw !important;  
+    }
+}
+
+
+/* detail image */
+.detail-image{
+    height: 23vw;
+    width: 35vw;
+    border-radius:7% ;
+}
+
+.reviewHead{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* info */
+/* Centering the main box */
+.main-box {
+    margin: 10vh auto;
+    width: 320px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling the user info container */
+.info-container {
+    width: 100%;
+}
+
+/* Header Styling */
+.info-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-header i {
+    color: #007bff;
+    margin-right: 8px;
+}
+
+/* User details styling */
+.info-details {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.info-details p {
+    margin: 5px 0;
+}
+
+.info-details strong {
+    color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-box {
+        width: 90%;
+    }
+}

@@ -1,0 +1,43 @@
+<!-- <nav class="navbar navbar-expand-md bg-light border-bottom border-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><i class="fa-solid fa-house"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/lists">All lists</a>
+          <a class="nav-link" href="/lists/new">Add list</a>
+        </div>
+      </div>
+    </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-md bg-light border-bottom border-dark sticky-top">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="/"><i class="fa-solid fa-house"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="/lists">All lists</a>
+              <a class="nav-link" href="/lists/new">Add list</a>
+          </div>
+      </div>
+      <!-- Profile Section -->
+      <div class="d-flex align-items-center">
+        <% if(!currentuser){  %>
+          <a href="/lists/login" class="nav-link me-2">Login</a>
+          <a href="/lists/signup" class="nav-link me-3">Sign Up</a>
+        <% } %>
+          <a href="/lists/profile">
+             <i class="fa-solid fa-user"></i>
+          </a>
+
+      </div>
+  </div>
+</nav>
